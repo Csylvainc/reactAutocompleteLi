@@ -1,1 +1,15 @@
-/* Insert here your implementation for the Suggestions component */
+import React from 'react';
+
+
+const Suggestion = (props) => {
+    return (
+        <div>
+            <ul>
+               
+            </ul>
+
+        </div>
+    )
+}
+
+export default Suggestion;

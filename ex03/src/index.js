@@ -13,6 +13,23 @@ class App extends React.Component {
     }
 
     /* Complete here the App component implementation */
+    handleChange = (event) => {
+        this.setState({searchValue: event.currentTarget.value});
+      }
+
+    handleSubmit = (event) => {
+        alert(`You are searching for ${this.state.searchValue}`)
+        event.preventDefault();
+    }
+
+    render() {
+        return (
+            <div>
+                <SearchForm searchValue={this.state.searchValue} handleChange={this.handleChange} handleSubmit={this.handleSubmit}/>
+                <Suggestions/>
+            </div>
+        )
+    }
 }
 
 ReactDOM.render(<App data={authors} />, document.getElementById('root'));

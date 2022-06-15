@@ -12,7 +12,7 @@ const Preview = (props) => {
     }
     return (
         <div className={css}>
-            <p className="HasSelection">{text}</p>
+            <p>{text}</p>
         </div>
     )
 }

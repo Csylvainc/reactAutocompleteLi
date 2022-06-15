@@ -2,10 +2,10 @@ import React from 'react';
 import './Preview.css'
 
 const Preview = (props) => {
-    let text = "You havent't made your selection yet."
+    let text = "Current input is"
     let css
     if(props.selectedValue){
-            text = `You have currently selected the ${props.selectedValue} level`
+            text = `Current input is ${props.selectedValue}`
             css = 'Preview HasSelection'
     }else{
         css = 'Preview'

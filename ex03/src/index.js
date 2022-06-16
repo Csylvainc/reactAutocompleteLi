@@ -26,7 +26,7 @@ class App extends React.Component {
         return (
             <div>
                 <SearchForm searchValue={this.state.searchValue} handleChange={this.handleChange} handleSubmit={this.handleSubmit}/>
-                <Suggestions/>
+                <Suggestions searchValue={this.state.searchValue} data={authors}/>
             </div>
         )
     }
